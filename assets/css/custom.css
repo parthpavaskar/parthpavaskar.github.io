@@ -1,0 +1,57 @@
+/* Hide section heading icons in biography block */
+.flex.items-center.gap-4 > .flex-shrink-0.w-12.h-12.rounded-full {
+  display: none !important;
+}
+
+/* Reduce vertical size of education card blocks */
+#education .group.flex.flex-col.rounded-xl {
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+/* Reduce font sizes and line heights in education section */
+#education h3,
+#education .text-lg {
+  font-size: 0.95rem !important;
+  line-height: 1.2 !important;
+}
+
+#education .text-base {
+  font-size: 0.85rem !important;
+  line-height: 1.3 !important;
+}
+
+#education .text-sm {
+  font-size: 0.8rem !important;
+  line-height: 1.25 !important;
+}
+
+/* Reduce vertical spacing within education items */
+#education .space-y-2 > * + * {
+  margin-top: 0.25rem !important;
+}
+
+#education .space-y-1 > * + * {
+  margin-top: 0.1rem !important;
+}
+
+#education .space-y-4 > * + * {
+  margin-top: 0.75rem !important;
+}
+
+/* Display dates responsively - same line when space allows, wrap when needed */
+#education p.text-sm {
+  white-space: normal !important;
+  line-height: 1.4 !important;
+}
+
+#education p.text-sm br {
+  display: none !important;
+}
+
+#education p.text-sm::first-line {
+  display: inline;
+}
+

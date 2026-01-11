@@ -1,0 +1,30 @@
+<style>
+/* Custom navigation styles - always show menu items, hide hamburger menu */
+
+/* Always show the navigation menu */
+#nav-menu.navbar-nav {
+  display: flex !important;
+}
+
+/* Always hide the hamburger menu button */
+label[for="nav-toggle"] {
+  display: none !important;
+}
+
+/* Ensure nav items display properly on all screen sizes */
+.navbar-nav {
+  flex-direction: row;
+  padding-bottom: 0 !important;
+}
+
+/* Adjust spacing for mobile */
+@media (max-width: 1024px) {
+  .navbar-nav {
+    gap: 0.5rem;
+  }
+  
+  .navbar {
+    flex-wrap: wrap;
+  }
+}
+</style>
