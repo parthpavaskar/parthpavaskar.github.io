@@ -2,8 +2,8 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: Dr. Alex Johnson
-  given: Alex
+  display: Dr. John Johnson
+  given: John
   family: Johnson
   alternate: ''  # Example: 王伟
   pronunciation: ''  # Example: Wáng Wěi
