@@ -22,5 +22,4 @@ mounts:
     includeFiles: '**.css'
   - source: layouts
     target: layouts
-  - source: assets
-    target: assets
+    priority: 10

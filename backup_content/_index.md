@@ -50,10 +50,10 @@ sections:
   - block: collection
     id: research
     content:
-      title: Featured Work
+      title: Featured Publications
       filters:
         folders:
-          - research
+          - publications
         featured_only: true
     design:
       view: article-grid

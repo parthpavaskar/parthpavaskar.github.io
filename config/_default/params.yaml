@@ -37,15 +37,13 @@ hugoblox:
       secondary: ""
       neutral: "" # Affects gray utilities (text-gray-*, bg-gray-*)
     # Optional: Mode-specific color overrides
-    colors_light: {}
-    colors_dark: {}
+    colors_light: { primary: "", secondary: "", neutral: "" }
+    colors_dark: { primary: "#7f482f", secondary: "#a3966a", neutral: "" }
     # Optional: Semantic surface color overrides
     surfaces:
-      background: ""
-      foreground: ""
       header:
-        background: ""
-        foreground: ""
+        background: "#29160c"
+        foreground: "#dbc1ac"
       footer:
         background: ""
         foreground: ""
@@ -103,7 +101,7 @@ hugoblox:
     style: minimal # minimal | columns | centered
     language_switcher: false
     # Custom footer text (HTML supported)
-    text: ""
+    text: "© 2026 Parth Pavaskar. All rights reserved."
 
   # ────────────────────────────────────────────────────────────────────────────
   # COPYRIGHT
@@ -111,7 +109,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   copyright:
     # Copyright notice - supports {year}, {name}, {license} placeholders
-    notice: "© {year} {name}. This work is licensed under {license}"
+    notice: "This work is licensed under {license}. Favicon designed by Freepik"
     license:
       type: cc # cc | custom
       allow_derivatives: false
@@ -152,7 +150,7 @@ hugoblox:
   content:
     # Math rendering
     math:
-      enable: false
+      enable: true
     # Table of contents
     toc:
       enable: true

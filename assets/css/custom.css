@@ -1,3 +1,34 @@
+/* Increase width of publication pages - remove max-width constraints */
+article.w-full main {
+  max-width: 100% !important;
+  padding-left: 0rem !important;
+  padding-right: 0rem !important;
+}
+
+/* Hide reading time on publication pages */
+article .text-gray-500 span.mx-1:last-child,
+article .text-gray-500 span.mx-1:last-child + span {
+  display: none !important;
+}
+article .text-gray-500 span.mx-1:nth-last-child(2) {
+  display: none !important;
+}
+
+/* Hide social media share buttons on publication pages */
+article section.flex.flex-row {
+  display: none !important;
+}
+
+/* Hide co-authors at the end of publication pages (keep only the first author) */
+article .max-w-prose > div.flex.pt-12.pb-4 ~ div.flex.pt-12.pb-4 {
+  display: none !important;
+}
+
+/* Hide author bio text in publication pages but keep role/title */
+article .max-w-prose > div.flex.pt-12.pb-4 .text-sm.text-neutral-700:not(.font-bold) {
+  display: none !important;
+}
+
 /* Hide section heading icons in biography block */
 .flex.items-center.gap-4 > .flex-shrink-0.w-12.h-12.rounded-full {
   display: none !important;
@@ -55,3 +86,94 @@
   display: inline;
 }
 
+/* Force dates to stay on same line */
+.exp-meta {
+  white-space: nowrap !important;
+  display: inline-block !important;
+}
+
+/* Control markdown block width - adjust the value below (e.g., 80rem, 1200px, 90%) */
+.max-w-prose {
+  max-width: 74rem !important;
+}
+
+.prose {
+  max-width: 74rem !important;
+}
+
+/* Control vertical spacing between blocks - adjust values below */
+section {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+/* Reduce space between header and first section */
+section:first-of-type {
+  padding-top: 1rem !important;
+}
+
+/* Force date containers to not wrap on small screens */
+.flex.items-center.gap-2.shrink-0 {
+  flex-wrap: nowrap !important;
+}
+
+/* Force header rows in experience cards to stay horizontal */
+.group.relative.pl-12 .flex.flex-col.sm\\:flex-row,
+.group.relative.pl-16 .flex.flex-col.sm\\:flex-row {
+  flex-direction: row !important;
+  align-items: center !important;
+}
+
+/* More specific selector for experience/education card headers
+.relative.bg-white > .flex.flex-col.sm\\:flex-row,
+.dark\\:bg-white\\/\\[0\\.02\\] > .flex.flex-col.sm\\:flex-row {
+  flex-direction: row !important;
+} */
+
+/* Target the specific header structure */
+.mb-3.gap-2.flex.flex-col {
+  flex-direction: row !important;
+}
+
+/* Force ALL education and experience card headers to horizontal layout */
+.group.relative > .relative > .flex {
+  flex-direction: row !important;
+}
+
+/* More aggressive override for card headers */
+div[class*="flex-col"][class*="sm:flex-row"] {
+  flex-direction: row !important;
+}
+
+/* Nuclear option - force all flex containers with mb-3 and gap-2 to be horizontal */
+.mb-3.gap-2 {
+  flex-direction: row !important;
+  justify-content: space-between !important;
+}
+
+/* Specifically target resume cards */
+.backdrop-blur-sm .mb-3 {
+  flex-direction: row !important;
+}
+
+/* Override Tailwind's flex-col class specifically */
+.flex-col.sm\:flex-row.sm\:items-start.sm\:justify-between.gap-2.mb-3 {
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  justify-content: space-between !important;
+}
+
+/* Even more specific - target the exact class combination */
+.flex.flex-col.sm\:flex-row {
+  flex-direction: row !important;
+}
+
+/* Dark mode page background
+html.dark {
+  background-color: #ffffff;
+} */
+
+/* Dark mode body background (if needed)
+html.dark body {
+  background-color: #32a852;
+} */

@@ -1,0 +1,6 @@
+# Custom translations for English
+# Override theme translations here
+
+# Theme toggle button tooltip
+- id: toggle_theme
+  translation: "Toggle theme"
