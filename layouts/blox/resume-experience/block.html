@@ -113,7 +113,7 @@
 
 {{ if $profile.education }}
 <div class="w-full">
-  <h2 class="mb-10 text-3xl font-bold text-gray-900 dark:text-white text-center">{{ i18n "education" }}</h2>
+  <h2 class="mb-10 text-xl font-bold text-gray-900 dark:text-white text-center">{{ i18n "education" }}</h2>
   
   {{/* Timeline container */}}
   <div class="relative">
@@ -157,11 +157,11 @@
             
             <div>
               {{/* Degree */}}
-              <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-secondary-600 dark:group-hover:text-secondary-400 transition-colors">
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-secondary-600 dark:group-hover:text-secondary-400 transition-colors text-right pr-4">
                 {{ $item.degree | default $item.area }}
               </h3>
               {{/* Institution */}}
-              <p class="text-secondary-600 dark:text-secondary-400 font-medium mt-1">
+              <p class="text-secondary-600 dark:text-secondary-400 font-medium mt-1 text-right pr-4">
                 {{ $item.institution }}
               </p>
             </div>

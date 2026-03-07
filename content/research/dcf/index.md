@@ -25,7 +25,9 @@ abstract: The Davis-Chandrasekhar-Fermi (DCF) method is widely employed to estim
 summary: 
 
 tags:
-- Source Themes
+- Magnetic fields
+- Magnetohydrodynamics
+- MHD simulations
 featured: true
 
 hugoblox:

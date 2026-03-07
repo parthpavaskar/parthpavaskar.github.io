@@ -1,9 +1,9 @@
 ---
-title: My Research
+title: Talks and Posters
 cms_exclude: true
 
 # View.
-view: card
+view: citation
 
 # Optional header image (relative to `static/media/` folder).
 banner:

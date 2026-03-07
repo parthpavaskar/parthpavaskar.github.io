@@ -1,3 +1,189 @@
+/* Make research page cards fit 2 per row */
+.container.max-w-\[65ch\] {
+  max-width: 57% !important;
+}
+.container.max-w-\[65ch\].grid-cols-1 {
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 2rem !important;
+}
+
+/* Add space after Research page title */
+.page-body .max-w-prose h1 {
+  margin-bottom: 5rem !important;
+}
+
+/* Force skills sections to display in 2 columns centered */
+.max-w-prose.grid.md\:grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr) !important;
+  max-width: 1100px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+/* Bold my name in citation view */
+.article-metadata.li-cite-author a[href="/authors/me/"] {
+  font-weight: 700 !important;
+}
+
+/* Increase font size in citation view */
+.pub-list-item {
+  font-size: 1.12rem !important;
+  line-height: 1.4 !important;
+  padding-bottom: 1.5rem !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* Override for talks section - no top padding */
+body[class*="section-talks"] .pub-list-item,
+.section-talks .pub-list-item {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.dark .pub-list-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.pub-list-item * {
+  font-size: 1.12rem !important;
+}
+
+.article-metadata {
+  font-size: 1.12rem !important;
+  line-height: 1.5 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Add line break after year, before title in citation view (not for talks) */
+.pub-list-item a.underline::before {
+  content: "\A" !important;
+  white-space: pre !important;
+}
+
+/* TALKS SECTION: Completely remove the ::before pseudo-element */
+body[class*="section-talks"] .pub-list-item a.underline::before,
+.section-talks .pub-list-item a.underline::before {
+  content: none !important;
+  display: none !important;
+}
+
+body[class*="section-talks"] .pub-list-item a.underline::after,
+.section-talks .pub-list-item a.underline::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Remove any top margin/padding on title links in talks */
+/* Use negative margin to pull title up over the hidden year space */
+body[class*="section-talks"] .pub-list-item a.underline,
+.section-talks .pub-list-item a.underline {
+  margin-top: -2rem !important;
+  padding-top: 0 !important;
+}
+
+/* Remove spacing at top of pub-list-item in talks */
+body[class*="section-talks"] .pub-list-item,
+.section-talks .pub-list-item {
+  padding-top: 0 !important;
+}
+
+body[class*="section-talks"] .pub-list-item > *:first-child,
+.section-talks .pub-list-item > *:first-child {
+  margin-top: 0 !important;
+}
+
+/* Target any wrapper divs that might have spacing */
+body[class*="section-talks"] .pub-list-item > div,
+.section-talks .pub-list-item > div {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+body[class*="section-talks"] .pub-list-item > div:first-child,
+.section-talks .pub-list-item > div:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Remove any line-height spacing from empty/hidden elements */
+body[class*="section-talks"] .pub-list-item *:empty,
+.section-talks .pub-list-item *:empty {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0 !important;
+  height: 0 !important;
+}
+
+/* Hide the automatic date in talks section only */
+body[class*="section-talks"] .article-metadata,
+.section-talks .article-metadata,
+body[class*="section-talks"] .pub-list-item .article-metadata,
+.section-talks .pub-list-item .article-metadata,
+body[class*="section-talks"] .li-cite-author,
+.section-talks .li-cite-author {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  left: -9999px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0 !important;
+}
+
+/* Remove line break before title if metadata present */
+body[class*="section-talks"] .pub-list-item a.underline::before,
+.section-talks .pub-list-item a.underline::before {
+  content: "" !important;
+  white-space: normal !important;
+}
+
+/* Remove underline and disable clicking on talk titles only (not publications) */
+/* Target talks page specifically by URL */
+body[class*="section-talks"] .pub-list-item a.underline,
+.section-talks .pub-list-item a.underline {
+  text-decoration: none !important;
+  cursor: default !important;
+  pointer-events: none !important;
+  color: inherit !important;
+}
+
+/* Fallback: Use :has() to target parent containing /talks/ URL */
+.pub-list-item:has(a[href*="/talks/"]) a.underline {
+  text-decoration: none !important;
+  cursor: default !important;
+  pointer-events: none !important;
+  color: inherit !important;
+}
+
+/* Add space between citation text and link buttons */
+.pub-list-item .flex.flex-wrap {
+  margin-top: 0.4rem !important;
+}
+
+/* Adjust bio button container spacing */
+.bio-buttons-container {
+  margin-bottom: 1rem !important;
+}
+
+/* Remove underline from bio buttons */
+.bio-buttons-container a {
+  text-decoration: none !important;
+}
+
+/* Increase width of publications page */
+.page-body .container.max-w-3xl {
+  max-width: 55% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 /* Increase width of publication pages - remove max-width constraints */
 article.w-full main {
   max-width: 100% !important;

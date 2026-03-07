@@ -28,3 +28,94 @@ label[for="nav-toggle"] {
   }
 }
 </style>
+
+<script>
+// Split title on double pipe delimiter in talks section and remove date
+(function() {
+  function formatTalksTitles() {
+    // Check if we're on the talks page
+    const isTalksPage = document.body.className.includes('section-talks') || 
+                        window.location.pathname.includes('/talks');
+    
+    if (!isTalksPage) return;
+    
+    // Find all publication list items
+    const items = document.querySelectorAll('.pub-list-item');
+    
+    items.forEach(function(item) {
+      const titleLink = item.querySelector('a.underline');
+      if (!titleLink) return;
+      
+      // Format the title first
+      if (!titleLink.getAttribute('data-title-processed')) {
+        const text = titleLink.textContent.trim();
+        
+        // Check if title has double pipe delimiter
+        if (text.includes('||')) {
+          const parts = text.split('||').map(s => s.trim());
+          
+          if (parts.length >= 2) {
+            // First part is event info (bold), rest is the title
+            const eventInfo = parts[0];
+            const title = parts.slice(1).join(' || ');
+            
+            titleLink.innerHTML = '<strong>' + eventInfo + '</strong><br>' + title;
+            titleLink.setAttribute('data-title-processed', 'true');
+          }
+        }
+      }
+      
+      // Find the buttons container
+      const buttonsContainer = item.querySelector('.flex.flex-wrap');
+      
+      // Get title link's parent container
+      let titleContainer = titleLink.parentElement;
+      while (titleContainer && titleContainer.parentElement !== item) {
+        titleContainer = titleContainer.parentElement;
+      }
+      if (!titleContainer) titleContainer = titleLink;
+      
+      // Remove everything except title container and buttons container
+      Array.from(item.childNodes).forEach(function(node) {
+        if (node !== titleContainer && node !== buttonsContainer) {
+          node.remove();
+        }
+      });
+      
+      // Ensure proper order: title first, then buttons
+      if (titleContainer && buttonsContainer) {
+        item.innerHTML = '';
+        item.appendChild(titleContainer);
+        item.appendChild(buttonsContainer);
+      }
+      
+      // Apply aggressive negative margin to pull content up
+      item.style.paddingTop = '0';
+      item.style.marginTop = '0';
+      titleLink.style.marginTop = '-2rem';
+      titleLink.style.paddingTop = '0';
+      titleLink.style.display = 'inline-block';
+      if (titleContainer) {
+        titleContainer.style.marginTop = '-2rem';
+        titleContainer.style.paddingTop = '0';
+      }
+    });
+  }
+  
+  // Run on DOM load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', formatTalksTitles);
+  } else {
+    formatTalksTitles();
+  }
+  
+  // Run multiple times to catch dynamically loaded content
+  setTimeout(formatTalksTitles, 10);
+  setTimeout(formatTalksTitles, 50);
+  setTimeout(formatTalksTitles, 100);
+  setTimeout(formatTalksTitles, 200);
+  setTimeout(formatTalksTitles, 500);
+  setTimeout(formatTalksTitles, 1000);
+  setTimeout(formatTalksTitles, 2000);
+})();
+</script>

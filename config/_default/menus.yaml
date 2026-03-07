@@ -10,13 +10,14 @@ main:
     weight: 10
   - name: Research
     identifier: R8nxOs71
-    url: /#research
+    # url: /#research
+    url: /research
     weight: 20
   - name: Publications
     identifier: 6QVJthgY
-    url: /#papers
+    url: /publications
     weight: 30
   - name: Talks
     identifier: uXCjb0iV
-    url: /#talks
+    url: /talks
     weight: 40

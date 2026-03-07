@@ -1,5 +1,5 @@
 ---
-title: "Diagnostics of MHD Modes in the ISM through Synchrotron Polarization Analysis"
+title: "Diagnostics of Magnetohydrodynamic Modes in the Interstellar Medium through Synchrotron Polarization Statistics"
 authors:
 - me
 - Ka Ho Yuen
