@@ -35,8 +35,10 @@ hugoblox:
     arxiv: 2508.03443
 
 links:
+  - type: doi
+    url: https://doi.org/10.1051/0004-6361/202553849
   - type: pdf
-    url: https://www.aanda.org/articles/aa/pdf/2026/03/aa53849-25.pdf
+    url: "uploads/papers/malik_2026.pdf"
   # - type: code
   #   url: ""
   # - type: dataset

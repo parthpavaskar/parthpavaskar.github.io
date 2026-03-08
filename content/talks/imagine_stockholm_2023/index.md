@@ -7,5 +7,5 @@ type: slides
 summary: ""
 links:
   - type: slides
-    url: /uploads/imagine_stockholm_2023_slides.pdf
+    url: "uploads/slides/pavaskar_imagine_stockholm_2023_slides.pdf"
 ---

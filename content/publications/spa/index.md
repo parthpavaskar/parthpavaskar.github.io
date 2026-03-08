@@ -37,8 +37,10 @@ hugoblox:
     arxiv: 2405.17985
 
 links:
+  - type: doi
+    url: https://doi.org/10.3847/1538-4357/ad5af5
   - type: pdf
-    url: https://iopscience.iop.org/article/10.3847/1538-4357/ad5af5/pdf
+    url: "uploads/papers/pavaskar_spa.pdf"
   # - type: code
   #   url: ""
   # - type: dataset

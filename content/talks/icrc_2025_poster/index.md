@@ -6,6 +6,6 @@ date: 2025-07-15
 type: slides
 summary: ""
 links:
-  - type: slides
-    url: /uploads/icrc_2025_poster.pdf
+  - type: poster
+    url: "uploads/slides/pavaskar_icrc_2025_poster.pdf"
 ---

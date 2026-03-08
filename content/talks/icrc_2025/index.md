@@ -7,5 +7,5 @@ type: slides
 summary: ""
 links:
   - type: slides
-    url: /uploads/icrc_2025_slides.pdf
+    url: "uploads/slides/pavaskar_icrc_2025_slides.pdf"
 ---

@@ -7,5 +7,5 @@ type: slides
 summary: ""
 links:
   - type: slides
-    url: /uploads/mmf_2024_slides.pdf
+    url: "uploads/slides/pavaskar_mmf_2024_slides.pdf"
 ---

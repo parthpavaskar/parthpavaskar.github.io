@@ -1,0 +1,9 @@
+{{- $url := .Destination -}}
+{{- $isExternal := strings.HasPrefix $url "http" -}}
+{{- $isFile := or (strings.HasSuffix $url ".pdf") (strings.HasSuffix $url ".PDF") (strings.HasSuffix $url ".zip") (strings.HasSuffix $url ".doc") (strings.HasSuffix $url ".docx") (strings.HasSuffix $url ".ppt") (strings.HasSuffix $url ".pptx") -}}
+
+<a href="{{ $url | safeURL }}"
+   {{- if or $isExternal $isFile }} target="_blank" rel="noopener noreferrer"{{ end -}}
+   {{- with .Title }} title="{{ . }}"{{ end -}}>
+  {{- .Text | safeHTML -}}
+</a>

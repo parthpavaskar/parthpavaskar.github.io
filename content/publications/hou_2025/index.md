@@ -36,8 +36,10 @@ hugoblox:
     arxiv: 2508.03443
 
 links:
+  - type: doi
+    url: https://doi.org/10.3847/2041-8213/ae0c97
   - type: pdf
-    url: https://iopscience.iop.org/article/10.3847/2041-8213/ae0c97/pdf
+    url: "uploads/papers/hou_2025.pdf"
   # - type: code
   #   url: ""
   # - type: dataset

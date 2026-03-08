@@ -7,5 +7,5 @@ type: slides
 summary: ""
 links:
   - type: slides
-    url: /uploads/ecap_obertrubach_2022_slides.pdf
+    url: "uploads/slides/pavaskar_ecap_obertrubach_2022_slides.pdf"
 ---

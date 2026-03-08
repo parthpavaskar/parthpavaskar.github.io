@@ -1,84 +1,54 @@
 ---
-title: "Diagnostics of Magnetohydrodynamic Modes in the Interstellar Medium through Synchrotron Polarization Statistics"
+title: "Identifying MHD modes in the turbulent ISM using synchrotron polarization"
 authors:
 - me
-- Ka Ho Yuen
-- Huirong Yan
-- Sunil Malik
-author_notes:
 date: "2024-08-10T00:00:00Z"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2025-09-04T00:00:00Z"
 
-# Publication type.
-# Accepts a single type but formatted as a YAML list (for Hugo requirements).
-# Enter a publication type from the CSL standard.
-publication_types: ["article-journal"]
+summary: "We refine and validate a the synchrotron polarization analysis (SPA) method using 3D MHD simulations to reliably classify and separate Alfvén and magnetosonic turbulence modes."
 
-# Publication name and optional abbreviated publication name.
-publication: "The Astrophysical Journal, Volume 971, Issue 1"
-publication_short: "ApJ, 971, 1"
-
-abstract: One of the biggest challenges in understanding magnetohydrodynamic (MHD) turbulence is identifying the plasma mode components from observational data. Previous studies on synchrotron polarization from the interstellar medium (ISM) suggest that the dominant MHD modes can be identified via statistics of Stokes parameters, which would be crucial for studying various ISM processes such as the scattering and acceleration of cosmic rays, star formation, and dynamo. In this paper, we present a numerical study of the synchrotron polarization analysis (SPA) method through systematic investigation of the statistical properties of the Stokes parameters. We derive the theoretical basis for our method from the fundamental statistics of MHD turbulence, recognizing that the projection of the MHD modes allows us to identify the modes dominating the energy fraction from synchrotron observations. Based on the discovery, we revise the SPA method using synthetic synchrotron polarization observations obtained from 3D ideal MHD simulations with a wide range of plasma parameters and driving mechanisms, and present a modified recipe for mode identification. We propose a classification criterion based on a new SPA+ fitting procedure, which allows us to distinguish between Alfvén mode and compressible/slow mode dominated turbulence. We further propose a new method to identify fast modes by analyzing the asymmetry of the SPA+ signature and establish a new asymmetry parameter to detect the presence of fast mode turbulence. Additionally, we confirm through numerical tests that the identification of the compressible and fast modes is not affected by Faraday rotation in both the emitting plasma and the foreground.
-
-# Summary. An optional shortened abstract.
-summary: 
+categories:
+- Research
 
 tags:
 - Magnetohydrodynamics
-- Plasma astrophysics
+- MHD Turbulence
 - MHD simulations
 - Magnetic fields
 featured: true
 
-hugoblox:
-  ids:
-    arxiv: 2405.17985
-
-links:
-  - type: pdf
-    url: https://iopscience.iop.org/article/10.3847/1538-4357/ad5af5/pdf
-  # - type: code
-  #   url: ""
-  # - type: dataset
-  #   url: ""
-  # - type: poster
-  #   url: ""
-  # - type: project
-  #   url: ""
-  # - type: slides
-  #   url: ""
-  # - type: source
-  #   url: ""
-  # - type: video
-  #   url: ""
-
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  # caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
   caption: ''
-  focal_point: ""
-  preview_only: false
+  focal_point: Center
+  preview_only: true
 
-# Associated Projects (optional).
-#   Associate this publication with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `internal-project` references `content/project/internal-project/index.md`.
-#   Otherwise, set `projects: []`.
-projects: []
-
-# Slides (optional).
-#   Associate this publication with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides: "example"` references `content/slides/example/index.md`.
-#   Otherwise, set `slides: ""`.
-slides: ""
 ---
 
-<!-- > [!NOTE]
-> Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software. -->
+Magnetohydrodynamic (MHD) turbulence is a fundamental process shaping the interstellar medium (ISM), governing cosmic-ray transport, star formation, and other processes of astrophysical plasmas. A key challenge in studying MHD turbulence is the separation of turbulent components in the fundamental MHD linear modes, Alfvén, slow, and fast modes, using observational data. Synchrotron polarization statistics
+<figure style="float: left; margin-right: 30px; margin-top: 5px; margin-bottom: 10px; max-width: 300px;">
+  <img src="turb_pol.png" alt="Description" style="width: 100%;">
+  <figcaption>Fig 1. Polarization vectors from synthetic synchrotron observations superimposed on the density distribution from a 2D slice of a 3D ideal MHD simulation.
+</figcaption>
+</figure>
 
-<!-- > [!NOTE]
-> Create your slides in Markdown - click the *Slides* button to check out the example. -->
+provide a promising avenue for mode classification, with previous studies suggesting that variations in the Stokes parameters can reveal the dominant MHD mode. This work presents a numerical study of the synchrotron polarization analysis (SPA) method, systematically investigating the statistical behavior of the Stokes parameters in the context of MHD turbulence. By deriving theoretical relationships from turbulence statistics, we refine the SPA method, incorporating a new SPA+ fitting procedure that enables reliable mode classification. Using 3D ideal MHD simulations spanning a broad range of plasma parameters and turbulence driving mechanisms, we generate synthetic synchrotron observations and test the modified method’s ability to distinguish between Alfvénic and compressible turbulence.
+
+
+A key result is the development of a classification criterion that quantifies the dominance of Alfvén versus slow modes based on the shape of the Stokes parameter variance function. Furthermore, we introduce an asymmetry parameter that allows, for the first time, the identification of fast mode turbulence using polarization statistics. This is particularly significant for cosmic-ray transport studies, as fast modes play a crucial role in particle acceleration and scattering. 
+
+<!-- <figure style="float: right; margin-left: 30px; margin-top: 5px; margin-bottom: 10px; max-width: 600px;">
+  <img src="spa_recipe.png" alt="Description" style="width: 100%;">
+  <figcaption>Fig 2. A flowchart showing the complete SPA+ classification scheme.</figcaption>
+</figure> -->
+
+<figure style="max-width: 1200px;">
+  <img src="spa_recipe.png" alt="Description" style="width: 100%;">
+  <figcaption>Fig 2. A flowchart showing the complete SPA+ classification scheme.</figcaption>
+</figure>
+
+Importantly, we confirm that the method remains robust even in the presence of Faraday rotation, a common source of uncertainty in synchrotron-based analyses. By enabling the quantitative decomposition of MHD turbulence into its constituent modes, this work provides a new diagnostic tool for probing the magnetic and dynamical state of the ISM, improving our ability to interpret astrophysical polarization data.
+
