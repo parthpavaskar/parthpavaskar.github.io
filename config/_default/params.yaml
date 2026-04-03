@@ -190,10 +190,10 @@ hugoblox:
   # Traffic and behavior analytics
   # ────────────────────────────────────────────────────────────────────────────
   analytics:
-    google:
-      measurement_id: "" # Google Analytics 4: G-XXXXXXXXXX
-    google_tag_manager:
-      container_id: "" # GTM-XXXXXXX
+    # google:
+    #   measurement_id: "" # Google Analytics 4: G-XXXXXXXXXX
+    # google_tag_manager:
+    #   container_id: "" # GTM-XXXXXXX
     plausible:
       domain: ""
     fathom:

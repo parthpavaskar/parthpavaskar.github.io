@@ -21,7 +21,7 @@ publication_short: "A&A, 707, A175"
 abstract: Magnetic fields pervade the interstellar medium and extend to various scales, including sub-parsec to kiloparsec scales within objects such as supernova remnants (SNRs) and pulsar-wind nebulae. These environments serve as crucial laboratories for understanding cosmic-ray acceleration and scattering processes, which remain poorly understood. The turbulent characteristics of magnetic fields in these regions significantly contribute to observed GeV-TeV emission. The Cygnus Loop (G74.0-8.5) region exemplifies such an environment, hosting a prominent SNR or possibly a combination of two SNRs, and displaying extensive non-thermal emission. In this study, we investigated the mean field inclination angle and dominant magnetohydrodynamic turbulence modes in the Cygnus Loop region, dividing it into southern, central, and northern sub-regions. Employing structure-function, relative anisotropy-based Y-parameter, and modified synchrotron-polarisation analysis using radio polarisation observations, we find that the southern and central regions exhibit low-inclination angles with dominant compressible modes, while the northern region shows ambiguous results with a higher inclination angle. The coherence length estimation suggests values of ∼2.0 pc in all sub-regions. Our study supports a two-SNR morphology for the Cygnus Loop, emphasising the critical role of magnetic fields and turbulence in understanding physical processes in supernova remnants and cosmic-ray transport. 
 
 # Summary. An optional shortened abstract.
-summary: 
+summary: "Magnetic field and MHD turbulence mode diagnostics in the Cygnus Loop supernova remnant using radio polarization."
 
 tags:
 - magnetohydrodynamics (MHD)

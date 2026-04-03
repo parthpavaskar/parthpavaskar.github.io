@@ -1,5 +1,6 @@
 ---
 title: My Research
+summary: "Research projects on plasma turbulence, magnetic field measurement techniques, and astrophysical mode diagnostics."
 cms_exclude: true
 
 # View.

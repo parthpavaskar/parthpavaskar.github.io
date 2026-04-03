@@ -4,7 +4,7 @@ title: "Astroparticle School 2022, Obertrubach-Bärnfels, Germany, 07 October 20
 date: 2022-10-07
 # `type: slides` is inferred from folder, but can be set explicitly:
 type: slides
-summary: ""
+summary: "Davis-Chandrasekhar-Fermi method for magnetic field measurement using ground-state alignment polarization."
 links:
   - type: slides
     url: "uploads/slides/pavaskar_ecap_obertrubach_2022_slides.pdf"

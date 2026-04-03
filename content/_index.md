@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title: ''
-summary: ''
+summary: 'PhD in plasma astrophysics at DESY and University of Potsdam. Research on MHD turbulence, magnetic fields, and cosmic-ray physics.'
 date: 2022-10-24
 type: landing
 

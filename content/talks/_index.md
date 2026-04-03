@@ -1,5 +1,6 @@
 ---
 title: Talks and Posters
+summary: "Conference presentations and invited talks on MHD turbulence, magnetic fields, and observational plasma diagnostics."
 cms_exclude: true
 
 # View.

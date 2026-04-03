@@ -1,5 +1,6 @@
 ---
 title: Publications
+summary: "Peer-reviewed research on plasma astrophysics, MHD turbulence, magnetic field diagnostics, and cosmic-ray transport."
 cms_exclude: true
 
 # View.

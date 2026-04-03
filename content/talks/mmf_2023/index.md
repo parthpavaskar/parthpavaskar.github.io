@@ -4,7 +4,7 @@ title: "Midwest Magnetic Fields Workshop 2023, Madison, Wisconsin, USA, 26 May 2
 date: 2023-05-26
 # `type: slides` is inferred from folder, but can be set explicitly:
 type: slides
-summary: ""
+summary: "Ground-state alignment polarization in Davis-Chandrasekhar-Fermi method for ISM magnetic field diagnostics."
 links:
   - type: slides
     url: "uploads/slides/pavaskar_mmf_2023_slides.pdf"

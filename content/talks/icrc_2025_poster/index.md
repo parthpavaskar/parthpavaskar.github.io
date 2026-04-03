@@ -4,7 +4,7 @@ title: "International Cosmic Ray Conference (ICRC) 2025, Geneva, Switzerland, 15
 date: 2025-07-15
 # `type: slides` is inferred from folder, but can be set explicitly:
 type: slides
-summary: ""
+summary: "Fast-mode turbulence cascade dynamics and mode conversion mechanisms in compressible astrophysical plasma."
 links:
   - type: poster
     url: "uploads/slides/pavaskar_icrc_2025_poster.pdf"

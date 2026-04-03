@@ -4,7 +4,7 @@ title: "Midwest Magnetic Fields Workshop 2024, Madison, Wisconsin, USA, 08 June 
 date: 2024-06-08
 # `type: slides` is inferred from folder, but can be set explicitly:
 type: slides
-summary: ""
+summary: "MHD mode diagnostics in the interstellar medium using synchrotron polarization statistics."
 links:
   - type: slides
     url: "uploads/slides/pavaskar_mmf_2024_slides.pdf"
