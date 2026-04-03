@@ -14,13 +14,13 @@ hugoblox:
   identity:
     # Site name - shown in navbar, footer, copyright, and browser title by default
     # Schema.org type for structured data
+    name: Parth Pavaskar
     type: person # person | organization | local_business
     # Short tagline displayed on your site
     tagline: "PhD Candidate | Deutsches Elektronen-Sunchrotron (DESY) | Uni Potsdam"
     # Social accounts (used for meta tags like Twitter Cards)
     social: {}
-    name: Parth Pavaskar
-    description: lorem
+    description: Research in plasma astrophysics, magnetized turbulence, MHD and PIC simulations, cosmic-ray transport, and observational magnetic field studies.
 
   # ────────────────────────────────────────────────────────────────────────────
   # THEME
@@ -120,7 +120,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   seo:
     # Browser tab title override (defaults to identity.name if not set)
-    title: ""
+    title: "Parth Pavaskar | Plasma Astrophysics & Turbulence"
     # For local_business identity type only
     location:
       address:
@@ -222,8 +222,8 @@ hugoblox:
   # Source code repository for "Edit this page" links
   # ────────────────────────────────────────────────────────────────────────────
   repository:
-    enable: false
-    url: "" # e.g., https://github.com/username/repo
+    enable: true
+    url: "https://github.com/parthpavaskar/website" # e.g., https://github.com/username/repo
     branch: main
     content_dir: content
 
@@ -252,7 +252,7 @@ hugoblox:
   # Privacy and compliance features
   # ────────────────────────────────────────────────────────────────────────────
   privacy:
-    enable: false
+    enable: true
     anonymize_analytics: true
 
   # ────────────────────────────────────────────────────────────────────────────
