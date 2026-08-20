@@ -29,7 +29,7 @@ tags:
 - Magnetohydrodynamics
 - Plasma astrophysics
 - PIC simulations
-featured: true
+featured: false
 
 hugoblox:
   ids:

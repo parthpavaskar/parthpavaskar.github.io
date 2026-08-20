@@ -1,5 +1,5 @@
 ---
-title: "Astroparticle School 2022, Obertrubach-Bärnfels, Germany, 07 October 2022  
+title: "Astroparticle School 2022, Obertrubach-Bärnfels, Germany, 07.10.2022  
  || Davis-Chandrasekhar-Fermi method employed with Ground-state Alignment"
 date: 2022-10-07
 # `type: slides` is inferred from folder, but can be set explicitly:

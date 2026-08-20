@@ -1,5 +1,5 @@
 ---
-title: "Midwest Magnetic Fields Workshop 2023, Madison, Wisconsin, USA, 26 May 2023  
+title: "Midwest Magnetic Fields Workshop 2023, Madison, Wisconsin, USA, 26.05.2023  
  || (ONLINE) Davis Chandrasekhar Fermi method using Ground State Alignment"
 date: 2023-05-26
 # `type: slides` is inferred from folder, but can be set explicitly:
