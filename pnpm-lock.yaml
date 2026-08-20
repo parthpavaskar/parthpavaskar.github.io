@@ -13,13 +13,16 @@ importers:
         version: 4.1.12
       '@tailwindcss/typography':
         specifier: ^0.5.10
-        version: 0.5.16
+        version: 0.5.16(tailwindcss@4.3.3)
       pagefind:
         specifier: ^1.4.0
         version: 1.4.0
       preact:
         specifier: ^10.27.2
         version: 10.27.2
+      tailwindcss:
+        specifier: ^4.3.3
+        version: 4.3.3
 
 packages:
 
@@ -437,6 +440,9 @@ packages:
   tailwindcss@4.1.12:
     resolution: {integrity: sha512-DzFtxOi+7NsFf7DBtI3BJsynR+0Yp6etH+nRPTbpWnS2pZBaSksv/JGctNwSWzbFjp0vxSqknaUylseZqMDGrA==}
 
+  tailwindcss@4.3.3:
+    resolution: {integrity: sha512-gOhV3P7ufE62QDGg1zVaTgCR+EtPv92k2nIhVcVKcLmxT1sUBsQGhnZj175j+MqRt4zLF7ic+sCYjfhxMxj7YQ==}
+
   tapable@2.2.2:
     resolution: {integrity: sha512-Re10+NauLTMCudc7T5WLFLAwDhQ0JWdrMK+9B2M8zR5hRExKmsRDCBA7/aV/pNJFltmBFO5BAMlQFi/vq3nKOg==}
     engines: {node: '>=6'}
@@ -633,12 +639,13 @@ snapshots:
       '@tailwindcss/oxide-win32-arm64-msvc': 4.1.12
       '@tailwindcss/oxide-win32-x64-msvc': 4.1.12
 
-  '@tailwindcss/typography@0.5.16':
+  '@tailwindcss/typography@0.5.16(tailwindcss@4.3.3)':
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
+      tailwindcss: 4.3.3
 
   braces@3.0.3:
     dependencies:
@@ -768,6 +775,8 @@ snapshots:
   source-map-js@1.2.1: {}
 
   tailwindcss@4.1.12: {}
+
+  tailwindcss@4.3.3: {}
 
   tapable@2.2.2: {}
 

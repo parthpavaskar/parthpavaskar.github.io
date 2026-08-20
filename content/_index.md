@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title: ''
-summary: 'PhD in plasma astrophysics at DESY and University of Potsdam. Research on MHD turbulence, magnetic fields, and cosmic-ray physics.'
+summary: 'Postdoctoral fellow in computational astrophysics at IUCAA Pune. Research on MHD turbulence, magnetic fields, and cosmic-ray physics.'
 date: 2022-10-24
 type: landing
 
@@ -15,7 +15,7 @@ sections:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
       text: |-
-        I am a final year Ph.D. candidate working in the Theoretical Astro-Particle Physics (THAT) group at the Deutsches Elektronen-Synchrotron (DESY), and the Plasma Astrophysics group at the University of Potsdam.
+        I am a postdoctoral fellow wokring at the Inter-University Centre for Astronomy and Astrophysics (IUCAA Pune). Previously, I was a Ph.D. student at the Deutsches Elektronen-Synchrotron (DESY) and the University of Potsdam.
         
         <div class="bio-buttons-container" style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
           <a href="resume" class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700 text-white font-bold text-lg rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
@@ -44,7 +44,7 @@ sections:
       # Avatar customization
       avatar:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
-        shape: circle # Options: circle (default), square, rounded
+        shape: rounded # Options: circle (default), square, rounded
   - block: markdown
     content:
       title: 'My Research'
